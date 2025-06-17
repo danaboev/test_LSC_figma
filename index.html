@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Запись на сервис BYD</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+	<header>
+		<div class="header__logo">
+			<img src="img/icons/icon_byd.svg" alt="icon_byd" class="header__logo_icon">
+		</div>
+		<div class="header_menu">
+				<ul class="header__menu_list">
+					<ol>Модельный ряд</ol>
+					<ol>О компании</ol>
+					<ol>BYD сервис</ol>
+					<ol>Спецпредложения</ol>
+					<ol>Точки продаж</ol>
+					<ol>Запись на тест драйв</ol>
+				</ul>
+		</div>
+		
+		<div class="lang">RU</div>
+	
+		<div class="header__phone">tel:+998 90 999 99 99</div>
+
+		<div class="header__logo_second">
+			<img src="img/icons/icon_BM.svg" alt="icon-beni-motors" class="header__logo_second-icon">
+		</div>
+
+	</header>
+
+	<section class="service">
+	<div class="container">
+		<a href="#" class="link-to-main-page">Главная страница
+			< Сервис</a>
+			<h1 class="title__main">BYD Service</h1>
+
+		<div class="service__wrapper">
+			<div class="service__tabs">
+				<div class="service__tab"></div>
+				<div class="service__tab"></div>
+				<div class="service__tab"></div>
+				<div class="service__tab service__tab_active "></div>
+			</div>
+			<div class="service_line"></div>
+			<h2 class="title__service">Запись на сервис</h2>
+			<div class="service__descr">
+				Вы можете отправить ваше обращение дилеру. Оставьте ваши контакты и уточните тему запроса, и мы свяжемся с вами.
+			</div>
+			<form id="service-form">
+				<label for="name">ФИО*</label>
+				<input type="text" id="name" name="name" required>
+	
+				<label for="phone">Номер телефона*</label>
+				<input type="tel" id="phone" name="phone" placeholder="+998 (" required>
+	
+				<label for="city">Город*</label>
+				<select id="city" name="city" required>
+					<option value="tashkent">Ташкент</option>
+					<option value="tashkent">Джизак</option>
+					<option value="bukhara">Бухара</option>
+					<option value="samarkand">Самарканд</option>
+				</select>
+
+				<label for="branch">Филиал*</label>
+				<select id="branch" name="branch" required>
+					<option value="yunusabad">BYD Yunusabad</option>
+					<option value="chilanzar">BYD Chilanzar</option>
+					<option value="sergeli">BYD Sergeli</option>
+				</select>
+	
+				<label for="car">Автомобиль*</label>
+				<select id="car" name="car" required>
+					<option value="byd-han">BYD Han</option>
+					<option value="byd-chanpion">BYD Champion</option>
+					<option value="byd-chazor">BYD Chazor</option>
+				</select>
+	
+				<label for="date">Дата*</label>
+				<input type="date" id="date" name="date" required>
+	
+				<label for="time">Время*</label>
+				<select id="time" name="time" required>
+					<option value="09:00">09:00</option>
+					<option value="11:00">11:00</option>
+					<option value="13:00">13:00</option>
+					<option value="09:00">15:00</option>
+					<option value="11:00">17:00</option>
+					<option value="13:00">19:00</option>
+				</select>
+	
+				<label for="comments">Ваши комментарии или вопрос*</label>
+				<textarea id="comments" name="comments" rows="4"></textarea>
+	
+				<label>
+					<input type="checkbox" required>
+					Я согласен с <a href="">условиями обработки персональных данных</a>
+				</label>
+	
+				<button type="submit">Записаться на сервис</button>
+			</form>
+
+		</div>
+	</div>
+	</section>
+
+
 </body>
 </html>
