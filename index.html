@@ -43,11 +43,20 @@
 
 		<div class="service__wrapper">
 			<div class="service__tabs">
-				<div class="service__tab"></div>
-				<div class="service__tab"></div>
-				<div class="service__tab"></div>
-				<div class="service__tab service__tab_active "></div>
+				<button class="service__tab-button" data-tab="tab1">Услуга 4G</button>
+				<button class="service__tab-button" data-tab="tab2">Гарантия</button>
+				<button class="service__tab-button" data-tab="tab3">Обслуживание</button>
+				<button class="service__tab-button active" data-tab="tab4">Запись на сервис</button>
 			</div>
+			<div class="service__tab-content">
+				<div class="service__tab" id="tab1">Содержимое для услуги 4G.</div>
+				<div class="service__tab" id="tab2">Содержимое для гарантии.</div>
+				<div class="service__tab" id="tab3">Содержимое для обслуживания.</div>
+				<div class="service__tab" id="tab4">Содержимое для записи на сервис.</div>
+			
+			
+			</div>
+
 			<div class="service__line"></div>
 			<h2 class="title__service-sing">Запись на сервис</h2>
 			<div class="service__descr">
@@ -82,18 +91,23 @@
 					<option value="byd-chazor">BYD Chazor</option>
 				</select>
 	
-				<label for="date">Дата*</label>
-				<input type="date" id="date" name="date" required>
+				<div class="services__date-picker">
+					<label for="date" class="services__date-label">Дата*</label>
+					<input type="text" id="date" class="services__date-input" placeholder="00/00/0000" readonly>
+					<div class="services__calendar" id="calendar"></div>
+				</div>
 	
-				<label for="time">Время*</label>
-				<select id="time" name="time" required>
-					<option value="09:00">09:00</option>
-					<option value="11:00">11:00</option>
-					<option value="13:00">13:00</option>
-					<option value="09:00">15:00</option>
-					<option value="11:00">17:00</option>
-					<option value="13:00">19:00</option>
-				</select>
+				<div class="service__time-selection">
+						<label for="time" class="service__time-label">Время*</label>
+						<div class="service__time-options">
+							<div class="service__time-option active" data-time="09:00">09:00</div>
+							<div class="service__time-option" data-time="11:00">11:00</div>
+							<div class="service__time-option" data-time="13:00">13:00</div>
+							<div class="service__time-option" data-time="15:00">15:00</div>
+							<div class="service__time-option" data-time="17:00">17:00</div>
+							<div class="service__time-option" data-time="19:00">19:00</div>
+						</div>
+				</div>
 	
 				<label for="comments">Ваши комментарии или вопрос*</label>
 				<textarea id="comments" name="comments" rows="4"></textarea>
@@ -109,6 +123,10 @@
 		</div>
 	</div>
 	</section>
+<script src="js/tabs.js"></script>
+<script src="js/data-pixer.js"></script>
+<script src="js/times.js"></script>
+
 
 
 </body>

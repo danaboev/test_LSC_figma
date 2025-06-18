@@ -2,6 +2,7 @@
 body{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 *{
 	font-family: 'Montserrat', sans-serif ;
@@ -61,33 +62,69 @@ body{
 
 .service{
 	margin: 38px 0 100px 0;
+	align-items: center;
+}
 
-}
-.link-to-main-page{
-	margin-left: 7%;
-	font-style: 14px;
-	color: #373637;
-	
-}
 .title__main{
 	margin: 0;
 	margin-top: 24px;
 	font-size: 48px;
-    font-weight: 700;
-    text-align: center;
+	font-weight: 700;
+	text-align: center;
 	color: #000000;
 }
 
 .service .service__wrapper{
 	display: block;
-    margin: 0 auto;
+	margin: 0 auto;
 	width: 680px;
 }
+
+.service__tabs {
+	display: flex;
+	justify-content: center;
+	margin-top: 60px;
+}
+
+.service__tab-button {
+	background: none;
+	border: none;
+	margin:0 20px 0 20px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.service__tab-button.active {
+	color: #D70C19;
+	border-bottom: 2px solid #D70C19;
+}
+
+.service__tab-content {
+	margin-top: 30px;
+}
+
+.service__tab {
+	display: none;
+}
+
+.servicer__tab.active {
+	display: block;
+}
+
+.link-to-main-page{
+	margin-left: 7%;
+	font-style: 14px;
+	color: #373637;
+}
+
 .service__line{
-	margin-top: 100px;
 	width: 600px;
 	height: 1px;
 	background-color: #F2F3F5;
+	display: block;
+	margin: 0 auto; 
+	margin-top: 100px;
 }
 .title__service-sing{
 	margin: 0;
@@ -98,7 +135,6 @@ body{
 	color: #000000;
 	
 }
-
 .service__descr{
 	margin: 0;
 	margin-top: 24px;
@@ -112,22 +148,95 @@ body{
 	margin-top: 60px;
 }
 .service #service__form label{
+	display: block;
 	font-size: 14px;
 	color:#373637;
-
 }
 .service #service__form input{
-	width: 680px;
+	/* width: 680px; */
+	width: 100%;
 	height: 48px;
 	margin:10px 0 24px 0;
+	font-style: 16px;
 	color:#373637;
-
+	cursor: pointer;
+	border: 1px solid #ccc;
+	padding: 13px;
 }
 .service #service__form select{
-	width: 680px;
+	/* width: 680px; */
+	width: 100%;
 	height: 48px;
 	margin:10px 0 24px 0;
+	padding: 13px;
 	color:#373637;
+	cursor: pointer;
+	border: 1px solid #ccc;
+}
+
+.services__date-picker {
+	position: relative;
+	margin: 20px 0;
+}
+
+.services__calendar {
+	display: none; /* hidden */
+	position: absolute;
+	background: white;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+	margin-top: 5px;
+	width: 270px;
+	height: 160px;
+
+}
+
+.services__calendar div {
+	display: inline-block;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.services__calendar div:hover {
+	background-color: #000000;
+	color:#ffff;
+	border-radius: 4px;
+}
+
+.service__time-selection {
+	margin: 20px 0;
+}
+
+.service__time-label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.service__time-options {
+	display: flex;
+}
+
+.service__time-option {
+	border: 1px solid #ccc;
+	padding: 10px 20px;
+	margin-right: 10px;
+	cursor: pointer;
+	text-align: center;
+	transition: background-color 0.3s, border-color 0.3s;
+}
+
+.service__time-option.active {
+	background-color: black;
+	color: white;
+	border-color: black;
+}
+
+.service__time-option:hover {
+	border-color: #888;
 }
 
 .service #service__form textarea{
@@ -135,15 +244,30 @@ body{
 	height: 160px;
 	margin:10px 0 24px 0;
 	color:#373637;
+	border: 1px solid #ccc;
 }
 .service #service__form label .service__checkbox{
 	width: 20px;
 	height: 20px;
 }
+
 .service__btn{
 	width: 325px;
 	height: 48px;
 	display: block;
 	margin: 0 auto;
 	margin-top: 60px;
+	padding: 12px 30px; 
+    border: 2px solid black; 
+    background-color: white;
+    color: black; 
+    font-size: 18px;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+    outline: none; 
+
+}
+.service__btn:hover{
+	background-color: black;
+	color:#FFFF;
 }
