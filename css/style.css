@@ -1,0 +1,149 @@
+
+body{
+	margin: 0;
+	padding: 0;
+}
+*{
+	font-family: 'Montserrat', sans-serif ;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.header{
+	height: 68px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 100px;
+	background: #252728;
+	margin: 0;
+
+}
+.header .header__phone{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu .menu_link{
+	display: flex;
+	justify-content: center;
+	font-size: 14px;
+	font-weight: 500;
+	margin-right: 4px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.menu li{
+	margin: 0;
+	margin-right: 5px;
+	list-style-type: none;
+}
+
+.menu_link:hover{
+	text-decoration: none;
+	color: #6F6D6F;
+}
+
+.header .header__phone{
+	color: #ffff;
+	
+}
+.lang{
+	font-size: 14px;
+	margin-right: 4px;
+	color: #FFFFFF;
+}
+/* section-service */
+
+.service{
+	margin: 38px 0 100px 0;
+
+}
+.link-to-main-page{
+	margin-left: 7%;
+	font-style: 14px;
+	color: #373637;
+	
+}
+.title__main{
+	margin: 0;
+	margin-top: 24px;
+	font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+	color: #000000;
+}
+
+.service .service__wrapper{
+	display: block;
+    margin: 0 auto;
+	width: 680px;
+}
+.service__line{
+	margin-top: 100px;
+	width: 600px;
+	height: 1px;
+	background-color: #F2F3F5;
+}
+.title__service-sing{
+	margin: 0;
+	margin-top: 40px;
+	font-size: 32px;
+	font-weight: 700;
+	text-align: center;
+	color: #000000;
+	
+}
+
+.service__descr{
+	margin: 0;
+	margin-top: 24px;
+	padding: 0 40px;
+	font-style: 16px;
+	text-align: center;
+	color: #373637;
+}
+
+.service #service__form{
+	margin-top: 60px;
+}
+.service #service__form label{
+	font-size: 14px;
+	color:#373637;
+
+}
+.service #service__form input{
+	width: 680px;
+	height: 48px;
+	margin:10px 0 24px 0;
+	color:#373637;
+
+}
+.service #service__form select{
+	width: 680px;
+	height: 48px;
+	margin:10px 0 24px 0;
+	color:#373637;
+}
+
+.service #service__form textarea{
+	width: 680px;
+	height: 160px;
+	margin:10px 0 24px 0;
+	color:#373637;
+}
+.service #service__form label .service__checkbox{
+	width: 20px;
+	height: 20px;
+}
+.service__btn{
+	width: 325px;
+	height: 48px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 60px;
+}

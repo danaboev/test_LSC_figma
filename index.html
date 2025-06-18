@@ -7,24 +7,26 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
-		<div class="header__logo">
+	<header class="header">
+		<div class="header__logo ">
 			<img src="img/icons/icon_byd.svg" alt="icon_byd" class="header__logo_icon">
 		</div>
-		<div class="header_menu">
-				<ul class="header__menu_list">
-					<ol>Модельный ряд</ol>
-					<ol>О компании</ol>
-					<ol>BYD сервис</ol>
-					<ol>Спецпредложения</ol>
-					<ol>Точки продаж</ol>
-					<ol>Запись на тест драйв</ol>
+		<nav class="menu" >
+				<ul class="menu_link">
+					<li class="menu_item"><a href="#" class="menu_link">Модельный ряд </a></li>
+					<li class="menu_item"><a href="#" class="menu_link">О компании</a></li>
+					<li class="menu_item"><a href="#" class="menu_link">BYD сервис</a></li>
+					<li class="menu_item"><a href="#" class="menu_link">Спецпредложения</a></li>
+					<li class="menu_item"><a href="#" class="menu_link">Точки продаж </a></li>
+					<li class="menu_item"><a href="#" class="menu_link">Запись на тест драйв</a></li>
 				</ul>
-		</div>
+		</nav>
 		
 		<div class="lang">RU</div>
 	
-		<div class="header__phone">tel:+998 90 999 99 99</div>
+		<div class="header__phone"> 
+			<img src="img/icons/icon_phone.svg" alt="phone_icon" class="header__phone_icon">
+			<a href="tel:+998 90 999 99 99"></a>+998 90 999 99 99</div>
 
 		<div class="header__logo_second">
 			<img src="img/icons/icon_BM.svg" alt="icon-beni-motors" class="header__logo_second-icon">
@@ -33,10 +35,11 @@
 	</header>
 
 	<section class="service">
-	<div class="container">
 		<a href="#" class="link-to-main-page">Главная страница
 			< Сервис</a>
-			<h1 class="title__main">BYD Service</h1>
+	<div class="container">
+		
+		<h1 class="title__main">BYD Service</h1>
 
 		<div class="service__wrapper">
 			<div class="service__tabs">
@@ -45,12 +48,12 @@
 				<div class="service__tab"></div>
 				<div class="service__tab service__tab_active "></div>
 			</div>
-			<div class="service_line"></div>
-			<h2 class="title__service">Запись на сервис</h2>
+			<div class="service__line"></div>
+			<h2 class="title__service-sing">Запись на сервис</h2>
 			<div class="service__descr">
 				Вы можете отправить ваше обращение дилеру. Оставьте ваши контакты и уточните тему запроса, и мы свяжемся с вами.
 			</div>
-			<form id="service-form">
+			<form id="service__form" class="service__form">
 				<label for="name">ФИО*</label>
 				<input type="text" id="name" name="name" required>
 	
@@ -95,14 +98,14 @@
 				<label for="comments">Ваши комментарии или вопрос*</label>
 				<textarea id="comments" name="comments" rows="4"></textarea>
 	
-				<label>
-					<input type="checkbox" required>
+				<label >
+					<input type="checkbox" required class="service__checkbox">
 					Я согласен с <a href="">условиями обработки персональных данных</a>
 				</label>
 	
-				<button type="submit">Записаться на сервис</button>
+				
 			</form>
-
+			<button class="service__btn" type="submit">Записаться на сервис</button>
 		</div>
 	</div>
 	</section>
