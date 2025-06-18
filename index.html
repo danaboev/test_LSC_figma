@@ -20,10 +20,16 @@
 					<li class="menu_item"><a href="#" class="menu_link">Точки продаж </a></li>
 					<li class="menu_item"><a href="#" class="menu_link">Запись на тест драйв</a></li>
 				</ul>
+
+				<div class="language-switcher">
+					<button id="language-button" class="language-button">Ру  <span class="arrow">▼</span></button>
+					<div class="language-options" id="language-options">
+				<div class="language-option" data-lang="ru">Русский</div>
+				<div class="language-option" data-lang="en">English</div>
+			</div>
+		</div>
 		</nav>
 		
-		<div class="lang">RU</div>
-	
 		<div class="header__phone"> 
 			<img src="img/icons/icon_phone.svg" alt="phone_icon" class="header__phone_icon">
 			<a href="tel:+998 90 999 99 99"></a>+998 90 999 99 99</div>
@@ -43,86 +49,86 @@
 
 		<div class="service__wrapper">
 			<div class="service__tabs">
-				<button class="service__tab-button" data-tab="tab1">Услуга 4G</button>
+				<button class="service__tab-button " data-tab="tab1">Услуга 4G</button>
 				<button class="service__tab-button" data-tab="tab2">Гарантия</button>
 				<button class="service__tab-button" data-tab="tab3">Обслуживание</button>
 				<button class="service__tab-button active" data-tab="tab4">Запись на сервис</button>
 			</div>
 			<div class="service__tab-content">
-				<div class="service__tab" id="tab1">Содержимое для услуги 4G.</div>
+				<!-- <div class="service__tab" id="tab1">Содержимое для услуги 4G.</div>
 				<div class="service__tab" id="tab2">Содержимое для гарантии.</div>
 				<div class="service__tab" id="tab3">Содержимое для обслуживания.</div>
-				<div class="service__tab" id="tab4">Содержимое для записи на сервис.</div>
+				<div class="service__tab" id="tab4">Содержимое для записи на сервис.</div> -->
 			
-			
-			</div>
 
-			<div class="service__line"></div>
-			<h2 class="title__service-sing">Запись на сервис</h2>
-			<div class="service__descr">
-				Вы можете отправить ваше обращение дилеру. Оставьте ваши контакты и уточните тему запроса, и мы свяжемся с вами.
-			</div>
-			<form id="service__form" class="service__form">
-				<label for="name">ФИО*</label>
-				<input type="text" id="name" name="name" required>
-	
-				<label for="phone">Номер телефона*</label>
-				<input type="tel" id="phone" name="phone" placeholder="+998 (" required>
-	
-				<label for="city">Город*</label>
-				<select id="city" name="city" required>
-					<option value="tashkent">Ташкент</option>
-					<option value="tashkent">Джизак</option>
-					<option value="bukhara">Бухара</option>
-					<option value="samarkand">Самарканд</option>
-				</select>
+				<div class="service__line"></div>
+				<h2 class="title__service-sing">Запись на сервис</h2>
+				<div class="service__descr">
+					Вы можете отправить ваше обращение дилеру. Оставьте ваши контакты и уточните тему запроса, и мы свяжемся с вами.
+				</div>
+				<form id="service__form" class="service__form">
+					<label for="name">ФИО*</label>
+					<input type="text" id="name" name="name" required>
+		
+					<label for="phone">Номер телефона*</label>
+					<input type="tel" id="phone" name="phone" placeholder="+998 (" required>
+		
+					<label for="city">Город*</label>
+					<select id="city" name="city" required>
+						<option value="tashkent">Ташкент</option>
+						<option value="tashkent">Джизак</option>
+						<option value="bukhara">Бухара</option>
+						<option value="samarkand">Самарканд</option>
+					</select>
 
-				<label for="branch">Филиал*</label>
-				<select id="branch" name="branch" required>
-					<option value="yunusabad">BYD Yunusabad</option>
-					<option value="chilanzar">BYD Chilanzar</option>
-					<option value="sergeli">BYD Sergeli</option>
-				</select>
-	
-				<label for="car">Автомобиль*</label>
-				<select id="car" name="car" required>
-					<option value="byd-han">BYD Han</option>
-					<option value="byd-chanpion">BYD Champion</option>
-					<option value="byd-chazor">BYD Chazor</option>
-				</select>
-	
-				<div class="services__date-picker">
-					<label for="date" class="services__date-label">Дата*</label>
-					<input type="text" id="date" class="services__date-input" placeholder="00/00/0000" readonly>
-					<div class="services__calendar" id="calendar"></div>
-				</div>
-	
-				<div class="service__time-selection">
-						<label for="time" class="service__time-label">Время*</label>
-						<div class="service__time-options">
-							<div class="service__time-option active" data-time="09:00">09:00</div>
-							<div class="service__time-option" data-time="11:00">11:00</div>
-							<div class="service__time-option" data-time="13:00">13:00</div>
-							<div class="service__time-option" data-time="15:00">15:00</div>
-							<div class="service__time-option" data-time="17:00">17:00</div>
-							<div class="service__time-option" data-time="19:00">19:00</div>
-						</div>
-				</div>
-	
-				<label for="comments">Ваши комментарии или вопрос*</label>
-				<textarea id="comments" name="comments" rows="4"></textarea>
-	
-				<label >
-					<input type="checkbox" required class="service__checkbox">
-					Я согласен с <a href="">условиями обработки персональных данных</a>
-				</label>
-	
-				
-			</form>
-			<button class="service__btn" type="submit">Записаться на сервис</button>
+					<label for="branch">Филиал*</label>
+					<select id="branch" name="branch" required>
+						<option value="yunusabad">BYD Yunusabad</option>
+						<option value="chilanzar">BYD Chilanzar</option>
+						<option value="sergeli">BYD Sergeli</option>
+					</select>
+		
+					<label for="car">Автомобиль*</label>
+					<select id="car" name="car" required>
+						<option value="byd-han">BYD Han</option>
+						<option value="byd-chanpion">BYD Champion</option>
+						<option value="byd-chazor">BYD Chazor</option>
+					</select>
+		
+					<div class="services__date-picker">
+						<label for="date" class="services__date-label">Дата*</label>
+						<input type="text" id="date" class="services__date-input" placeholder="00/00/0000" readonly>
+						<div class="services__calendar" id="calendar"></div>
+					</div>
+		
+					<div class="service__time-selection">
+							<label for="time" class="service__time-label">Время*</label>
+							<div class="service__time-options">
+								<div class="service__time-option active" data-time="09:00">09:00</div>
+								<div class="service__time-option" data-time="11:00">11:00</div>
+								<div class="service__time-option" data-time="13:00">13:00</div>
+								<div class="service__time-option" data-time="15:00">15:00</div>
+								<div class="service__time-option" data-time="17:00">17:00</div>
+								<div class="service__time-option" data-time="19:00">19:00</div>
+							</div>
+					</div>
+		
+					<label for="comments">Ваши комментарии или вопрос*</label>
+					<textarea id="comments" name="comments" rows="4"></textarea>
+		
+					<label class="checkbox-label">
+						<input type="checkbox" class="checkbox" />
+						<div class="checkbox-custom"></div>
+						Я согласен с <a href="">условиями обработки персональных данных</a>
+					</label>
+					
+				</form>
+				<button class="service__btn" type="submit">Записаться на сервис</button>
+			</div>
 		</div>
-	</div>
-	</section>
+		</section>
+	</div>	
+<script src="js/lang-switcher.js"></script>
 <script src="js/tabs.js"></script>
 <script src="js/data-pixer.js"></script>
 <script src="js/times.js"></script>
