@@ -1,4 +1,3 @@
-
 body{
 	margin: 0;
 	padding: 0;
@@ -8,12 +7,9 @@ body{
 	font-family: 'Montserrat', sans-serif ;
 	box-sizing: border-box;
 }
-
 .container {
 	max-width: 1920px;
-
 }
-
 .header{
 	width: 100%;
 	height: 68px;
@@ -72,7 +68,6 @@ nav{
 	width: 20px; 
 	height: 20px; 
 }
-
 .language-switcher.arrow::before {
 	content: ''; 
 	position: absolute;
@@ -94,7 +89,6 @@ nav{
 	align-items: center;
 	border:none;
 }
-
 .language-options {
 	display: none; 
 	position: absolute;
@@ -104,12 +98,10 @@ nav{
 	border: 1px solid #FFFF; 
 	z-index: 1000; 
 }
-
 .language-option {
 	padding: 10px 15px;
 	cursor: pointer; 
 }
-
 .language-option:hover {
 	background-color: #555; 
 	color:#ffff;
@@ -119,7 +111,6 @@ nav{
 	margin: 38px 0 100px 0;
 	align-items: center;
 }
-
 .title__main{
 	margin: 0;
 	margin-top: 24px;
@@ -128,13 +119,11 @@ nav{
 	text-align: center;
 	color: #000000;
 }
-
 .service .service__wrapper{
 	display: block;
 	margin: 0 auto;
 	width: 680px;
 }
-
 .service__tabs {
 	display: flex;
 	justify-content: center;
@@ -162,7 +151,6 @@ nav{
 .servicer__tab.active {
 	display: block;
 }
-
 .link-to-main-page{
 	margin-left: 7%;
 	font-style: 14px;
@@ -193,7 +181,6 @@ nav{
 	text-align: center;
 	color: #373637;
 }
-
 .service #service__form{
 	margin-top: 60px;
 }
@@ -223,12 +210,10 @@ nav{
 	cursor: pointer;
 	border: 1px solid #ccc;
 }
-
 .services__date-picker {
 	position: relative;
 	margin: 20px 0;
 }
-
 .services__calendar {
 	display: none; /* hidden */
 	position: absolute;
@@ -240,36 +225,29 @@ nav{
 	margin-top: 5px;
 	width: 270px;
 	height: 160px;
-
 }
-
 .services__calendar div {
 	display: inline-block;
 	padding: 10px;
 	cursor: pointer;
 	text-align: center;
 }
-
 .services__calendar div:hover {
 	background-color: #000000;
 	color:#ffff;
 	border-radius: 4px;
 }
-
 .service__time-selection {
 	margin: 20px 0;
 }
-
 .service__time-label {
 	display: block;
 	margin-bottom: 10px;
 	font-size: 16px;
 }
-
 .service__time-options {
 	display: flex;
 }
-
 .service__time-option {
 	border: 1px solid #ccc;
 	padding: 10px 20px;
@@ -278,17 +256,14 @@ nav{
 	text-align: center;
 	transition: background-color 0.3s, border-color 0.3s;
 }
-
 .service__time-option.active {
 	background-color: black;
 	color: white;
 	border-color: black;
 }
-
 .service__time-option:hover {
 	border-color: #888;
 }
-
 .service #service__form textarea{
 	width: 680px;
 	height: 160px;
@@ -296,31 +271,33 @@ nav{
 	color:#373637;
 	border: 1px solid #ccc;
 }
-.checkbox-label {
+/* .checkbox-label {
 	display: flex;
 	align-items: center;
 	cursor: pointer;
-}
-
+} */
 .checkbox {
 	display: none; 
 }
-
 .checkbox-custom {
 	width: 20px;
 	height: 20px; 
 	border: 2px solid #ccc;
-	border-radius: 4px; 
+	border-radius: none;
 	margin-right: 10px; 
 	position: relative; 
 	transition: background-color 0.3s, border-color 0.3s; 
 }
-
+.checkbox-text{
+	margin: -17px 0 0 30px;
+}
+.checkbox-text a{
+	color:#000000;
+}
 .checkbox:checked + .checkbox-custom {
 	background-color: black; 
 	border-color: black; 
 }
-
 .checkbox:checked + .checkbox-custom::after {
 	content: ''; 
 	position: absolute;
@@ -332,7 +309,6 @@ nav{
 	border-width: 0 2px 2px 0; 
 	transform: rotate(45deg);
 }
-
 .service__btn{
 	width: 325px;
 	height: 48px;
@@ -347,7 +323,6 @@ nav{
 	cursor: pointer; 
 	transition: background-color 0.3s, color 0.3s; 
 	outline: none; 
-
 }
 .service__btn:hover{
 	background-color: black;

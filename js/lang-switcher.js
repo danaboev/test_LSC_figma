@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const languageButton = document.getElementById('language-button');
     const languageOptions = document.getElementById('language-options');
 
-
     languageButton.addEventListener('click', () => {
         languageOptions.style.display = languageOptions.style.display === 'block' ? 'none' : 'block'; // Переключаем видимость
     });

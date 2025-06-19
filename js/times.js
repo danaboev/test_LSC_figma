@@ -5,12 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
         option.addEventListener('click', () => {
             //deactivate
             timeOptions.forEach(opt => opt.classList.remove('active'));
-
             //activate
             option.classList.add('active');
         });
     });
-
-    
     timeOptions[0].click();
 });
